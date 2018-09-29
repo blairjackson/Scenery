@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Scenery</title>
+</head>
+
+<body>
+
+
+    <video id="change_video" class="video" autoplay muted loop src="video/sky.mp4"></video>
+
+    <a href="#" onclick = "menu_toggle()"> <div class="menu"><span class="burger"></span></div> </a>
+
+    <div id="drop_down">
+        <a href="#" onclick="view_sky()">
+            <p class="link" id="sky_link">Night Sky</p>
+        </a>
+
+        <a href="#" onclick="view_beach()">
+            <p class="link" id ="beach_link">Beach</p>
+        </a>
+
+        <a href="#" onclick="view_aquarium()">
+            <p class="link" id="aqua_link">Aquarium</p>
+        </a>
+
+        <a href="#" onclick="view_tree()">
+            <p class="link" id = "tree_link">Tree</p>
+        </a>
+
+        <a href="#" onclick="view_sunset()">
+            <p class="link" id="sunset_link">Sunset</p>
+        </a>
+    </div>
+
+    <script src="javascript/main.js"></script>
+</body>
+
+</html>

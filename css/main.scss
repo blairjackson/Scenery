@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400');
+
+*{
+    color:black;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+html, body{
+    padding:0;
+    margin: 0;    
+}
+
+a{
+    text-decoration: none;
+}
+
+p:hover{
+    color: aqua;
+}
+
+.video{
+    position: fixed;
+    height: 101vh;
+    width:auto;
+    top:0;
+    z-index: -1;
+}
+
+.menu{
+    position: relative;
+    height:20px;
+    width:20px;
+    margin: 10px;
+    border-radius: 3px;
+    opacity: 0.5;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+
+}
+
+.burger, .burger::before, .burger::after{
+    position:absolute;
+    height: 2px;
+    width: 10px;
+    background-color: black;
+}
+
+.burger::before, .burger::after{
+    content: '';
+}
+
+.burger::after{
+    //bottom: 5px;
+}
+
+
+
+#drop_down{
+    position: absolute;
+    display: flex;
+    height: auto;
+    width:100px;
+    top:10px;
+    left:10px;
+    border-radius: 3px;
+    background-color: beige;
+    opacity: 0.5;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1em;
+}
